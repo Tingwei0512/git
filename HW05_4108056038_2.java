@@ -4,9 +4,10 @@ public class HW05_4108056038_2 extends LLK {
         int[][] a = new int[][] {{1,1},{3,2},{3,3}};
         System.out.println(test.checkLLK(a));
     }
+    int len;
     public boolean checkLLK(int[][] array) {
         int i,j,k;
-        int len=array.length;
+        len=array.length;
         double[] slope = new double[len];
         for(i=len-1;i>=0;i--) {
             k=0;
@@ -35,7 +36,7 @@ public class HW05_4108056038_2 extends LLK {
             do {
                 do {
                    i++;
-                   if(i>=A.length) break;
+                   if(i>=len) break;
                 }while(A[i]<p);
                 do {
                     j--;
